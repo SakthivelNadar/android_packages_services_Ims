@@ -22,7 +22,7 @@ import android.telephony.SmsMessage;
 import com.android.internal.telephony.cdma.SmsMessageConverter;
 import com.android.internal.telephony.gsm.SuppServiceNotification;
 import com.android.internal.telephony.uicc.IccUtils;
-import com.android.internal.telephony.RIL;
+import com.android.internal.telephony.RILUtils;
 import com.mediatek.ims.ImsCallSessionProxy.User;
 import com.mediatek.ims.ril.ImsCommandsInterface.RadioState;
 import com.mediatek.ims.ImsRegInfo;
