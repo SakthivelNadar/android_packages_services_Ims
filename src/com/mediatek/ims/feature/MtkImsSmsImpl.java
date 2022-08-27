@@ -150,7 +150,7 @@ public class MtkImsSmsImpl extends ImsSmsImplBase {
         SmsMessageBase sms = null;
         if (SmsMessage.FORMAT_3GPP.equals(format)) {
             sms = (SmsMessageBase)
-                    com.android.internal.telephony.gsm.SmsMessage.newFromCDS(pdu);
+                    com.android.internal.telephony.gsm.SmsMessage.createFromPdu(pdu);
         } else if (SmsMessage.FORMAT_3GPP2.equals(format)) {
             sms = (SmsMessageBase)
                     com.android.internal.telephony.cdma.SmsMessage.createFromPdu(pdu);
