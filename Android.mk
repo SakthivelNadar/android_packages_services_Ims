@@ -6,11 +6,6 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ext/src)
 
-ifneq ($(TARGET_DEVICE), gobo)
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/../../../../../../device/mediatek/config/ImsSSConfig/ImsResource/res
-else
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/../../../../../../device/huawei/gobo/config/ImsSSConfig/ImsResource/res
-endif
 
 LOCAL_JAVA_LIBRARIES += telephony-common
 LOCAL_JAVA_LIBRARIES += ims-common
